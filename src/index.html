@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importing and optimizing the scene</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Page Loader Overlay -->
+    <div id="pageLoader" class="loader-overlay">
+        <div class="loader-card">
+            <div class="loader-title">Loading</div>
+            <div class="loader-bar">
+                <span class="fill"></span>
+            </div>
+            <div class="loader-sub">Preparing the room…</div>
+        </div>
+    </div>
+
+    <!-- Navigation Overlay (hidden initially; shown after loader) -->
+    <div id="navOverlay" class="nav-overlay" style="display:none; opacity:0">
+        <div class="nav-card">
+            <div class="nav-title">Navigation</div>
+            <ul class="nav-list">
+                <li>Double-click to focus/zoom on any object</li>
+                <li>Toggle Day/Night mode in the GUI</li>
+                <li>Resize the GUI panel (width, font size) to your liking</li>
+                <li>Scroll to smooth-zoom; drag to orbit the camera</li>
+                <li>Hover highlights certain grouped elements</li>
+                <li>Click the lamp to toggle its glow</li>
+                <li>Click special objects to open links (Telegram, WhatsApp, Instagram)</li>
+            </ul>
+            <div class="nav-actions">
+                <button type="button" class="nav-btn" data-action="close-nav">Got it</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
